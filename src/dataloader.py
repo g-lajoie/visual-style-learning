@@ -27,5 +27,5 @@ class StreamingImageDataset(IterableDataset):
 
     def __iter__(self):
         pipeline = wds.WebDataset(self.urls)
-                    .decode("pil")
-                    .to_tuple("jpg", "txt")
+            .decode("pil")
+            .to_tuple("jpg", "txt")
